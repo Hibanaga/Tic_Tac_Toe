@@ -29,6 +29,7 @@ button {
   border: 1rem solid rgb(182, 182, 182);
   font-size: 2rem;
   transition: 0.2s ease all;
+  color: #fff;
 }
 
 .btn_click:active {
