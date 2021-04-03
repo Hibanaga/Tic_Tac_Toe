@@ -104,7 +104,9 @@ function game () {
                 playerTurn("X",e)
             }
         } 
+        checkDraw(countClick);
     })
+   
 }
 
 //function of player turn on jquery
@@ -145,6 +147,14 @@ function check(val) {
     } 
 };
 
+function checkDraw(count) {
+    if (count === 9) {
+        alert(`Sorry but it's draw`);
+        createGame();
+    }
+}
+
+
 //function of reset on jqeury
 function resetGame() {
     createGame();
@@ -154,6 +164,7 @@ function resetGame() {
     $("#wins_0").html(0);
     $("#wins_X").html(0);
 }
+
 
 //reset of game on jquery
 $("#btn_startNewGame").on("click",()=> {
